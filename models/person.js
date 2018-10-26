@@ -13,6 +13,10 @@ class Person {
   fullName() {
     return `${this.firstName} ${this.surname}`;
   }
+
+  addEmail(email) {
+    this.emails.push(email);
+  }
 }
 
 module.exports = Person;
