@@ -10,6 +10,7 @@ describe('Person', () => {
     expect(person.firstName).to.equal('Luis');
     expect(person.surname).to.equal('Amez');
     expect(person.dob).to.equal('03/08/1984');
+    expect(person.emails).to.deep.equal([]);
   });
 
   it('should capitalize firstName', () => {
