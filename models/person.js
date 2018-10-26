@@ -22,6 +22,20 @@ class Person {
   addPhoneNumber(phoneNumber) {
     this.phoneNumbers.push(phoneNumber);
   }
+
+  returnFormattedDetails() {
+    const details = `${this.firstName} ${this.surname}\n` +
+    `----------\n` +
+    `DOB: ${this.dob}\n` +
+    `\n` +
+    `Email Addresses:\n` +
+    `${this.emails.map((email) => `- ${email}\n`).join('')}` +
+    `\n` +
+    `Phone Numbers:\n` +
+    `${this.phoneNumbers.map((phoneNumber) => `- ${phoneNumber}\n`).join('')}`
+
+    return details;
+  }
 }
 
 module.exports = Person;
