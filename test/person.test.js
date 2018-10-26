@@ -32,4 +32,12 @@ describe('Person', () => {
 
     expect(person.emails).to.deep.equal(['luis@mail.com', 'amez@mail.com']);
   });
+
+  it('should add a phone number', () => {
+    const person = new Person('Luis', 'Amez', '03/08/1984');
+    person.addPhoneNumber('0123456789');
+    person.addPhoneNumber('9876543210');
+
+    expect(person.phoneNumbers).to.deep.equal(['0123456789', '9876543210']);
+  });
 });
