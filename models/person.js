@@ -8,6 +8,10 @@ class Person {
   _capitalize(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
+
+  fullName() {
+    return `${this.firstName} ${this.surname}`;
+  }
 }
 
 module.exports = Person;
