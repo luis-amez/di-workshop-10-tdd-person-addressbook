@@ -3,6 +3,7 @@ class Person {
     this.firstName = this._capitalize(firstName);
     this.surname = surname;
     this.dob = dob;
+    this.emails = [];
   }
 
   _capitalize(string) {
