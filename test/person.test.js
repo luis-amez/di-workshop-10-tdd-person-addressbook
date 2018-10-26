@@ -11,4 +11,10 @@ describe('Person', () => {
     expect(person.surname).to.equal('Amez');
     expect(person.dob).to.equal('03/08/1984');
   });
+
+  it('should capitalize firstName', () => {
+    const person = new Person('luis', 'Amez', '03/08/1984');
+
+    expect(person.firstName).to.equal('Luis');
+  });
 });
