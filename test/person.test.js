@@ -17,4 +17,10 @@ describe('Person', () => {
 
     expect(person.firstName).to.equal('Luis');
   });
+
+  it('should return a full name', () => {
+    const person = new Person('Luis', 'Amez', '03/08/1984');
+
+    expect(person.fullName()).to.equal('Luis Amez');
+  });
 });
